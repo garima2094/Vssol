@@ -37,6 +37,7 @@ header .navbar {
 .carousel-indicators .active {background-color: #000000;}
 .image img {
     width:100%;
+    height: 500px;
 }
 main .row .col-xs-*,main .row .col-xs-*{
     padding: 0;
@@ -243,3 +244,10 @@ h3:hover:before {
     background-color: #272727;
     color: #f9f9f9;
 }
+/*
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}*/
