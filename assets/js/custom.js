@@ -5,11 +5,14 @@ $(document).ready(function () {
         element.find(".footer").load("footer.html");
 
     });
-    $('body').find(".slider").slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoPlay: true
-    });
+    var slider = jQuery('body').find(".slider");
+    if(slider.length != 0){
+        slider.slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoPlay: true
+        });
+    }
 });
