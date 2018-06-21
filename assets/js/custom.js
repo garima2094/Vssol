@@ -15,4 +15,12 @@ $(document).ready(function () {
             autoPlay: true
         });
     }
+    $('.loadMore').loadMoreResults({
+        tag: {
+            name: 'div',
+            'class': 'image'
+        },
+        displayedItems: 8,
+        showItems: 8
+    });
 });
