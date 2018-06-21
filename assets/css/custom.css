@@ -88,17 +88,18 @@ main .row .col-xs-*,main .row .col-xs-*{
 .article + h3{text-align: center;
     color: #7f7f7f;}
 .thumbnail:hover img {transform: scale(1.03);}
-.btn-default {
+.btn-default,.btn-load-more {
     color: #fff;
     background-color: #9e5079;
     border-color: #fff;
     padding: 15px;
 }
-.btn-default:hover,.btn-default:focus {
+.btn-default:hover,.btn-load-more:hover.btn-default:focus,.btn-load-more:focus {
     color: #9f507a;
     background-color: #fff;
     border-color: #5e2c4e;
 }
+.btn-load-more {position: sticky;left:50%; margin: 10px;}
 .user-icon{
     border-radius: 10rem;
     border: 1px solid;
