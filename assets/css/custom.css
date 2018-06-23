@@ -1,6 +1,6 @@
 body{
     background-color: #ffffff;
-    font-family: 'Roboto Slab', serif !Important;
+    font-family: 'Montserrat', sans-serif !Important;
     text-align: justify;
 }
 header .navbar {
@@ -14,6 +14,7 @@ header .navbar {
     -moz-box-shadow: 0 8px 6px -6px #777;
     box-shadow: 0 8px 6px -6px #777;
 }
+.loadMore {margin-top: 20px !important;}
 .blue {color : #fff; min-height: 100px;  background-color: #5C164E; text-align: center;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color: #ccc;}
 .navbar-default .navbar-collapse {margin-top: 12px;}
