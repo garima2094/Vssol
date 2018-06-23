@@ -262,3 +262,14 @@ h3:hover:before {
     bottom: 0;
     width: 100%;
 }*/
+
+@media (max-width : 768px){
+    .major{
+        height: 350px;
+    }
+    .table{
+        display: block;
+        overflow-x: scroll;
+        width: 100%;
+    }
+}

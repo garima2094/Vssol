@@ -10,7 +10,24 @@ $(document).ready(function () {
             infinite: true,
             slidesToShow: 5,
             slidesToScroll: 1,
-            autoPlay: true
+            autoPlay: true,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        autoPlay: true
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 7,
+                        slidesToScroll: 1,
+                    }
+                }
+        ]
         });
     }
     var loadMore = element.find(".loadMore");
