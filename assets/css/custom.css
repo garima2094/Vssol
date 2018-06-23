@@ -1,25 +1,22 @@
 body{
-    background-color: #ffffff;
-    font-family: 'Montserrat', sans-serif !Important;
-    text-align: left;
+    background-color: #f9f9f9;
+    font-family: 'Roboto Slab', serif !Important;
 }
 header .navbar {
     margin-bottom: 0;
     min-height: 75px;
 }
-.nav.navbar-nav{margin-left : 70px;}
 .navbar-default {
     background-color: #5C164E;
     -webkit-box-shadow: 0 8px 6px -6px #777;
     -moz-box-shadow: 0 8px 6px -6px #777;
     box-shadow: 0 8px 6px -6px #777;
 }
-.loadMore {margin-top: 20px !important;}
-.blue {color : #fff; min-height: 100px;  background-color: #5C164E; text-align: center;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color: #ccc;}
 .navbar-default .navbar-collapse {margin-top: 12px;}
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    font-weight: bold;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #FFB238;
@@ -32,16 +29,15 @@ header .navbar {
     padding: 0px 15px;
 }
 .carousel, main .container, main .container-fluid {margin-top: 70px;}
-.info {    margin-top: 0 !important; background-color: #F5F5F5;}
 .carousel-inner > .item > img {
     width:100%;
-    height:600px;
+    height:700px;
 }
 .carousel-indicators li {border-color : #000000;}
 .carousel-indicators .active {background-color: #000000;}
-.image img,.thumbnail a > img {
+.image img {
     width:100%;
-    height: 400px !important;
+    height: 500px;
 }
 main .row .col-xs-*,main .row .col-xs-*{
     padding: 0;
@@ -50,7 +46,7 @@ main .row .col-xs-*,main .row .col-xs-*{
     content: '';
     background-color: #000000;
     display: block;
-    height: 1px;
+    height: 3px;
     margin: 0.325em 0 0.5em 0;
     width: 100%;
 }
@@ -86,27 +82,21 @@ main .row .col-xs-*,main .row .col-xs-*{
     left: 35%;
 }
 .equal-height {
-    height: 400px;
+    height: 550px;
 }
-.equal-height a.btn.btn-default {
-    margin-top: 15px;
-}
-ul >li { text-align: left;}
-.article + h3{text-align: center;
-    color: #7f7f7f;}
+.article + h3{text-align: center;}
 .thumbnail:hover img {transform: scale(1.03);}
-.btn-default,.btn-load-more {
+.btn-default {
     color: #fff;
     background-color: #9e5079;
     border-color: #fff;
     padding: 15px;
 }
-.btn-default:hover,.btn-load-more:hover.btn-default:focus,.btn-load-more:focus {
+.btn-default:hover,.btn-default:focus {
     color: #9f507a;
     background-color: #fff;
     border-color: #5e2c4e;
 }
-.btn-load-more {position: sticky;left:50%; margin: 10px;}
 .user-icon{
     border-radius: 10rem;
     border: 1px solid;
@@ -134,22 +124,21 @@ h3:hover:before {
      transform: scaleX(0.75);
  }*/
 .major {
-    padding: 20px 50px;
-    font-size: 1.3em;
+    padding: 50px;
+    font-size: 1.5em;
     height: 280px;
     transition: transform .2s;
     border-radius: 2px;
-    box-shadow: 0 1px 10px #c3c3c3;
+    box-shadow: 1px 3px 8px 0 rgba(0,0,0,0.2);
     background-color: #fff;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 .card {
-    padding: 20px 50px;
-    font-size: 1.3em;
+    padding: 50px;
+    font-size: 1.5em;
     transition: transform .2s;
     border-radius: 2px;
-    box-shadow: 0 1px 10px #c3c3c3;
+    box-shadow: 1px 3px 8px 0 rgba(0,0,0,0.2);
     background-color: #fff;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -160,7 +149,7 @@ h3:hover:before {
 }
 .black .action {
     padding: 20px 50px;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .action h3 +a {color : #fff;}
 .major h3 > a{
@@ -262,31 +251,3 @@ h3:hover:before {
     bottom: 0;
     width: 100%;
 }*/
-
-@media (max-width : 768px){
-    .major{
-        height: 350px;
-    }
-    .table{
-        display: block;
-        overflow-x: scroll;
-        width: 100%;
-
-    }
-    .equal-height ,.major{
-        height: auto;
-    }
-}
-
-@media (max-width : 1200px) {
-    .equal-height{
-        height: 700px;
-    }
-
-    .carousel, main .container, main .container-fluid {margin-top: 140px;}
-}
-@media (max-width : 1440px) {
-    .equal-height{
-        height: 600px;
-    }
-}
