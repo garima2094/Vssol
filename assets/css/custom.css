@@ -1,6 +1,7 @@
 body{
     background-color: #ffffff;
     font-family: 'Roboto Slab', serif !Important;
+    text-align: justify;
 }
 header .navbar {
     margin-bottom: 0;
@@ -84,8 +85,12 @@ main .row .col-xs-*,main .row .col-xs-*{
     left: 35%;
 }
 .equal-height {
-    height: 550px;
+    height: 400px;
 }
+.equal-height a.btn.btn-default {
+    margin-top: 15px;
+}
+ul >li { text-align: left;}
 .article + h3{text-align: center;
     color: #7f7f7f;}
 .thumbnail:hover img {transform: scale(1.03);}

@@ -1,11 +1,9 @@
 $(document).ready(function () {
-    $("body").ready(function () {
-        var element = jQuery(this);
+        var element = jQuery("body");
         element.find('.header').load("header.html");
         element.find(".footer").load("footer.html");
 
-    });
-    var slider = jQuery('body').find(".slider");
+    var slider = element.find(".slider");
     if(slider.length != 0){
         slider.slick({
             dots: false,
@@ -15,12 +13,15 @@ $(document).ready(function () {
             autoPlay: true
         });
     }
-    $('.loadMore').loadMoreResults({
-        tag: {
-            name: 'div',
-            'class': 'image'
-        },
-        displayedItems: 8,
-        showItems: 8
-    });
+    var loadMore = element.find(".loadMore");
+    if(loadMore.length !=0) {
+        $('.loadMore').loadMoreResults({
+            tag: {
+                name: 'div',
+                'class': 'image'
+            },
+            displayedItems: 8,
+            showItems: 8
+        });
+    }
 });
