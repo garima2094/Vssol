@@ -1,168 +1,208 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-
 <head>
-    <title>VSSOL Services</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<title>VSSOL</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="assets/css/custom.css"/>
+	<link rel="stylesheet" href="assets/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="assets/jquery/dist/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/custom.js"></script>
 </head>
-
 <body>
+<header class="header">
+</header>
+<main>
+	<div class="container">
+              <div class="card">
+	              <h1 class="center">Book Now</h1>
+	              <div class="row">
+	              <div class="col-lg-offset-4 col-lg-4">
+	              <img src="images/vssolLogo.png"/>
+	              </div>
+	              </div>
+	              <div class="row">
+		              <div class="col-lg-offset-3 col-md-offset-4 col-sm-offset-3 col-lg-6 col-md-4 col-sm-6">
+	              <form>
+		              <div class="form-group">
+			              <label for="name">Name <sup>*</sup></label>
+			              <input type="text" class="form-control input-lg" id="name" placeholder="Name" required>
+		              </div>
+		              <div class="form-group">
+			              <label for="exampleInputEmail1">Email address <sup>*</sup></label>
+			              <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Email" required>
+		              </div>
+		              <div class="form-group">
+			              <label for="phone">Mobile Number <sup>*</sup></label>
+			              <input type="tel" class="form-control input-lg" id="phone" placeholder="Mobile Number" required>
+		              </div>
+		              <div class="form-group">
+			              <label for="date">Booking Date</label>
+			              <input type="date" class="form-control input-lg" id="date">
+		              </div>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header" class="alt">
-            <a href="indexold.html" class="logo">
-                <strong>VSSOL</strong>
-                <span>VS SOLUTIONS</span>
-            </a>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-        </header>
-
- 				<!-- Menu -->
-                 <nav id="menu">
-						<ul class="links">
-							<li><a href="indexold.html">Home</a></li>
-							<li><a href="landing.html">About Us</a></li>
-							<li><a href="http://blog.vssol.org">Blog</a></li>
-							<li><a href="services.html">Services</a></li>
-						</ul>
-						<ul class="actions vertical">
-							<li><a href="bookNow.html" class="button special fit">Book Now</a></li>
-						</ul>
-					</nav>
-
-
-        <!-- Main -->
-        <div id="main" class="alt">
-
-            <!-- One -->
-            <section id="one">
-                <div class="inner">
-                    <header class="major">
-                        <h1>OUR SERVICES</h1>
-                    </header>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwA0DhtkN8vCajMGpaM5Vkc8ygcwhaR-Gn_6uV4e-76W7OHg/viewform?embedded=true"
+		              <h3>Country</h3>
+		              <div class="form-group">
+		              <label class="radio-inline">
+			              <input type="radio" id="inlineCheckbox1" value="India"> India
+		              </label>
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox2" value="dubai"> DUBAI
+			              </label>
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox3" value="nigeria"> NIGERIA
+			              </label>
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox4" value="SINGAPORE"> SINGAPORE
+			              </label>
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox5" value="THAILAND"> THAILAND
+			              </label> <label class="radio-inline">
+			              <input type="radio" id="inlineCheckbox6" value="AFRICA"> AFRICA
+		              </label>
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox7" value="OTHER"> OTHER
+			              </label>
+		              </div>
+			           <div class="row">
+			              <div class="col-lg-6">
+			              <h3>Our Services</h3>
+				              <div class="form-group">
+			              <label class="checkbox">
+				              <input type="checkbox" id="service1" value="India"> Career Counselling
+			              </label>
+			              <label class="checkbox">
+				              <input type="checkbox" id="service2" value="dubai">  Motivational Counselling
+			              </label>
+			              <label class="checkbox">
+				              <input type="checkbox" id="service3" value="nigeria"> Business Ideas
+			              </label>
+			              <label class="checkbox">
+				              <input type="checkbox" id="service4" value="SINGAPORE"> Pre - Booking as a Guest Lecturer
+			              </label>
+			              <label class="checkbox">
+				              <input type="checkbox" id="service5" value="THAILAND"> Pre - Booking as a Motivational Speaker
+			              </label>
+			              <label class="checkbox">
+				              <input type="checkbox" id="service6" value="OTHER"> OTHER
+			              </label>
+		              </div>
+			              </div>
+			              <div class="col-lg-6">
+		              <h3>Modes Of Counselling</h3>
+				              <div class="form-group">
+		              <label class="checkbox">
+			              <input type="checkbox" id="mode1" value="India"> Email Counselling
+		              </label>
+		              <label class="checkbox">
+			              <input type="checkbox" id="mode2" value="dubai">  Telephonic Counselling
+		              </label>
+		              <label class="checkbox">
+			              <input type="checkbox" id="mode3" value="nigeria">  Video Counselling
+		              </label>
+              </div>
+			              </div>
+		              </div>
+		              <div class="row">
+			              <div class="col-lg-6 col-xs-12">
+				              <img src="images/paytm.jpg" style="height: 200px;"/>
+					              <label class="radio">
+						              <input type="radio" id="payment" value="payTm"> PayTm
+					              </label>
+		              </div>
+			              <div class="col-lg-6 col-xs-12">
+				              <img src="images/account.png" style="height: 200px;"/>
+					              <label class="radio">
+						              <input type="radio" id="account" value="Account"> Online Transfer
+					              </label>
+			              </div>
+		              </div>
+	              </form>
+		              </div>
+	              </div>
+		              <div class="row">
+			              <h3 class="center">Payment Terms</h3>
+			              <p>ADVANCE PAYMENT IS COMPULSORY BEFORE SUBMITTING THE FORM.</p>
+			              <p>After Booking our services, Kindly Make an Advance Payment through Below Link. Our Representative will contact you soon.</p>
+				              <p>You have to make an ADVANCE PAYMENT ONLY THAN YOUR BOOKING WILL BE APPROVED.</p>
+			              <table class="table">
+				              <thead>
+				              <tr>
+					              <th>Type of Counselling</th>
+					              <th>Payment Terms</th>
+				              </tr>
+				              </thead>
+				              <tbody>
+				              <tr>
+					              <td>Counselling  For  Indian Citizen	</td>
+					              <td></td>
+				              </tr>
+				              <tr>
+					              <td>CAREER COUNSELLING</td>
+					              <td>1000rs.</td>
+				              </tr>
+				              <tr>
+					              <td>MOTIVATIONAL COUNSELLING</td>
+					              <td>1000rs.</td>
+				              </tr>
+				              <tr>
+					              <td>BUSINESS IDEAS</td>
+					              <td>5000rs.</td>
+				              </tr>
+				              <tr>
+					              <td>PRE - BOOKING as a Guest Lecturer</td>
+					              <td> 10000rs. + Travelling Expenses</td>
+				              </tr>
+				              <tr>
+					              <td>PRE – BOOKING as a Motivational Speaker	 </td>
+					              <td>15000rs.  + Travelling expenses</td>
+				              </tr>
+				              <tr>
+					              <td>Counselling  For NRI	</td>
+					              <td></td>
+				              </tr>
+				              <tr>
+					              <td>CAREER COUNSELLING</td>
+					              <td>$15.50</td>
+				              </tr>
+				              <tr>
+					              <td>MOTIVATIONAL COUNSELLING</td>
+					              <td>$15.50.</td>
+				              </tr>
+				              <tr>
+					              <td>BUSINESS IDEAS</td>
+					              <td>$93.72 </td>
+				              </tr>
+				              <tr>
+					              <td>PRE - BOOKING as a Guest Lecturer</td>
+					              <td>....</td>
+				              </tr>
+				              <tr>
+					              <td>PRE – BOOKING as a Motivational Speaker	 </td>
+					              <td>....</td>
+				              </tr>
+				              </tbody>
+			              </table>
+		              </div>
+		              <div class="form-group center">
+			              <button type="submit" class="btn btn-default">Submit</button>
+		              </div>
+		              </div>
+	              </div>
+              </div>
+                    <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwA0DhtkN8vCajMGpaM5Vkc8ygcwhaR-Gn_6uV4e-76W7OHg/viewform?embedded=true"
                         width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
+               --> </div>
             </section>
 
         </div>
-
-        <!-- Contact
-        <section id="contact">
-            <div class="inner">
-                <section>
-                    <form method="post" action="#">
-                        <div class="field half first">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
-                        </div>
-                        <div class="field half">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" />
-                        </div>
-                        <div class="field">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="6"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li>
-                                <input type="submit" value="Send Message" class="special" />
-                            </li>
-                            <li>
-                                <input type="reset" value="Clear" />
-                            </li>
-                        </ul>
-                    </form>
-                </section>
-                <section class="split">
-                    <section>
-                        <div class="contact-method">
-                            <span class="icon alt fa-envelope"></span>
-                            <h3>Email</h3>
-                            <a href="#">vassol.org@gmail.com</a>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="contact-method">
-                            <span class="icon alt fa-phone"></span>
-                            <h3>Phone</h3>
-                            <span>+91 860 287 3333
-                                <br>+91 996 309 2979</span>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="contact-method">
-                            <span class="icon alt fa-home"></span>
-                            <h3>Address</h3>
-                            <span>India</span>
-                        </div>
-                    </section>
-                </section>
-            </div>
-        </section> -->
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCTb1-atnOKFc8gcEgNz8dWw" class="icon alt fa-youtube">
-                            <span class="label">YouTube</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/Vssolorg/" class="icon alt fa-facebook">
-                            <span class="label">Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/divya_vssol/" class="icon alt fa-instagram">
-                            <span class="label">Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://divyajain27.wordpress.com/" class="icon alt fa-wordpress">
-                            <span class="label">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/divya-jain-9a2305104" class="icon alt fa-linkedin">
-                            <span class="label">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; VS SOLUTIONS</li>
-                </ul>
-            </div>
-        </footer>
-
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
-
+</main>
+<footer class="footer">
+</footer>
 </body>
 
 </html>
