@@ -21,9 +21,9 @@ $(document).ready(function () {
                     }
                 },
                 {
-                    breakpoint: 1200,
+                    breakpoint: 1024,
                     settings: {
-                        slidesToShow: 7,
+                        slidesToShow: 5,
                         slidesToScroll: 1,
                     }
                 }

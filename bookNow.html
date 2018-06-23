@@ -34,12 +34,14 @@
 <main>
 	<div class="container">
               <div class="card">
-	              <h3 class="center">Book Now</h3>
+	              <h1 class="center">Book Now</h1>
 	              <div class="row">
 	              <div class="col-lg-offset-4 col-lg-4">
 	              <img src="images/vssolLogo.png"/>
 	              </div>
 	              </div>
+	              <div class="row">
+		              <div class="col-lg-offset-3 col-md-offset-4 col-sm-offset-3 col-lg-6 col-md-4 col-sm-6">
 	              <form>
 		              <div class="form-group">
 			              <label for="name">Name <sup>*</sup></label>
@@ -57,39 +59,34 @@
 			              <label for="date">Booking Date</label>
 			              <input type="date" class="form-control input-lg" id="bookingDate">
 		              </div>
+
+		              <h3>Country</h3>
 		              <div class="form-group">
-			              <label for="time">Time</label>
-			              <input type="time" id="time" class="form-control input-lg">
-		              </div>
-		              <div class="row">
-			              <div class="col-lg-4">
-		              <div class="form-group">
-		              <label>Country</label>
-		              <label class="checkbox">
-			              <input type="checkbox" id="inlineCheckbox1" value="India"> India
+		              <label class="radio-inline">
+			              <input type="radio" id="inlineCheckbox1" value="India"> India
 		              </label>
-			              <label class="checkbox">
-				              <input type="checkbox" id="inlineCheckbox2" value="dubai"> DUBAI
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox2" value="dubai"> DUBAI
 			              </label>
-			              <label class="checkbox">
-				              <input type="checkbox" id="inlineCheckbox3" value="nigeria"> NIGERIA
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox3" value="nigeria"> NIGERIA
 			              </label>
-			              <label class="checkbox">
-				              <input type="checkbox" id="inlineCheckbox4" value="SINGAPORE"> SINGAPORE
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox4" value="SINGAPORE"> SINGAPORE
 			              </label>
-			              <label class="checkbox">
-				              <input type="checkbox" id="inlineCheckbox5" value="THAILAND"> THAILAND
-			              </label> <label class="checkbox">
-			              <input type="checkbox" id="inlineCheckbox6" value="AFRICA"> AFRICA
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox5" value="THAILAND"> THAILAND
+			              </label> <label class="radio-inline">
+			              <input type="radio" id="inlineCheckbox6" value="AFRICA"> AFRICA
 		              </label>
-			              <label class="checkbox">
-				              <input type="checkbox" id="inlineCheckbox7" value="OTHER"> OTHER
+			              <label class="radio-inline">
+				              <input type="radio" id="inlineCheckbox7" value="OTHER"> OTHER
 			              </label>
 		              </div>
-			              </div>
-			              <div class="col-lg-4">
-		              <div class="form-group">
-			              <label>Our Services</label>
+			           <div class="row">
+			              <div class="col-lg-6">
+			              <h3>Our Services</h3>
+				              <div class="form-group">
 			              <label class="checkbox">
 				              <input type="checkbox" name="services[]" id="service1" value="Career Counselling"> Career Counselling
 			              </label>
@@ -110,8 +107,9 @@
 			              </label>
 		              </div>
 			              </div>
-			              <div class="col-lg-4">
-		              <label>Modes Of Counselling</label>
+			              <div class="col-lg-6">
+		              <h3>Modes Of Counselling</h3>
+				              <div class="form-group">
 		              <label class="checkbox">
 			              <input type="checkbox" name="modes[]" id="mode1" value="Email Counselling"> Email Counselling
 		              </label>
@@ -122,7 +120,25 @@
 			              <input type="checkbox" name="modes[]" id="mode3" value="Video Counselling">  Video Counselling
 		              </label>
               </div>
+			              </div>
 		              </div>
+		              <div class="row">
+			              <div class="col-lg-6 col-xs-12">
+				              <img src="images/paytm.jpg" style="height: 200px;"/>
+					              <label class="radio">
+						              <input type="radio" id="payment" value="payTm"> PayTm
+					              </label>
+		              </div>
+			              <div class="col-lg-6 col-xs-12">
+				              <img src="images/account.png" style="height: 200px;"/>
+					              <label class="radio">
+						              <input type="radio" id="account" value="Account"> Online Transfer
+					              </label>
+			              </div>
+		              </div>
+	              </form>
+		              </div>
+	              </div>
 		              <div class="row">
 			              <h3 class="center">Payment Terms</h3>
 			              <p>ADVANCE PAYMENT IS COMPULSORY BEFORE SUBMITTING THE FORM.</p>
@@ -190,7 +206,8 @@
 		              <div class="form-group center">
 			              <button type="submit" onclick="submitClick()" id="submitBtn" class="btn btn-default">Submit</button>
 		              </div>
-	              </form>
+		              </div>
+	              </div>
               </div>
                     <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwA0DhtkN8vCajMGpaM5Vkc8ygcwhaR-Gn_6uV4e-76W7OHg/viewform?embedded=true"
                         width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>

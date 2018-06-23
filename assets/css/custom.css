@@ -1,7 +1,7 @@
 body{
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif !Important;
-    text-align: justify;
+    text-align: left;
 }
 header .navbar {
     margin-bottom: 0;
@@ -271,5 +271,25 @@ h3:hover:before {
         display: block;
         overflow-x: scroll;
         width: 100%;
+
     }
+    .equal-height ,.major{
+        height: auto;
+    }
+}
+
+@media (max-width : 1200px) {
+    .equal-height{
+        height: 700px;
+    }
+
+    .carousel, main .container, main .container-fluid {margin-top: 140px;}
+}
+@media (max-width : 1440px) {
+    .equal-height{
+        height: 600px;
+    }
+}
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+    margin-left: 0;
 }
