@@ -265,7 +265,7 @@ h3:hover:before {
 
 @media (max-width : 768px){
     .major{
-        height: 350px !important;
+        height: 350px;
     }
     .table{
         display: block;
@@ -280,7 +280,7 @@ h3:hover:before {
 
 @media (max-width : 1200px) {
     .equal-height{
-        height: 700px !important;
+        height: 700px;
     }
 
     .carousel, main .container, main .container-fluid {margin-top: 140px;}
