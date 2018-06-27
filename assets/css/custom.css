@@ -199,6 +199,11 @@ h3:hover:before {
     right: 20px;
     z-index: 1;
 }
+.scroll{
+    height: 500px;
+    display: block;
+    overflow-y: scroll;
+}
 .black {
     background-color: #636262;
     color: #fff;
