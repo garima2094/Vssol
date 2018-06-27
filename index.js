@@ -41,14 +41,6 @@ for (var i=0, n=ourServices.length;i<n;i++)
   // Save message
   saveMessage(name, country, city, email, phone,bookingDate,vals);
 
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
-
   // Clear form
   document.getElementById('contactForm').reset();
 }
