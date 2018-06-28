@@ -30,17 +30,25 @@ function submitForm(e){
   var bookingDate = getInputVal('bookingDate');
  var ourServices = document.getElementsByName('services[]');
  var modes = document.getElementsByName('modes[]');
-var vals = "";
+var vals_services = "";
+var vals_modes="";
+var payment=getInputVal('payment1');
 for (var i=0, n=ourServices.length;i<n;i++) 
 {
     if (ourServices[i].checked) 
     {
-        vals += ","+ourServices[i].value;
+        vals_services += ","+ourServices[i].value;
+    }
+}
+for (var i=0, n=modes.length;i<n;i++) 
+{
+    if (modes[i].checked) 
+    {
+        vals_modes += ","+modes[i].value;
     }
 }
   // Save message
-  saveMessage(name, country, city, email, phone,bookingDate,vals);
-
+  saveMessage(name, country, city, email, phone,bookingDate,vals_services,vals_modes,payment);
   // Clear form
   document.getElementById('contactForm').reset();
 }
@@ -51,7 +59,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, country, city, email, phone,bookingDate,vals){
+function saveMessage(name, country, city, email, phone,bookingDate,vals_services,vals_modes,payment){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
    name:name,
@@ -60,6 +68,50 @@ function saveMessage(name, country, city, email, phone,bookingDate,vals){
    email:email,
    phone:phone,
    bookingDate:bookingDate,
-   services:vals
+   services:vals_services,
+   modes:vals_modes,
+   payment_mode:payment
   });
+var ref=firebase.database().ref('bookNow');
+ref.on('value',gotData,errData); 
+
 } 
+
+
+function gotData(data)
+{
+
+var book=data.val();
+var keys=Object.keys(book);
+for(var i=0;i<keys.length;i++)
+{
+  var k=keys[i];
+ var name=book[k].name;
+ var  country=book[k].country;
+  var city=book[k].city;
+   var email=book[k].email;
+   var phone=book[k].phone;
+   var bookingDate=book[k].bookingDate;
+   var services=book[k].services;
+   var modes=book[k].modes;
+   var payment_mode=book[k].payment_mode; 
+    console.log(name,modes);
+
+
+  }
+}
+
+function errData(err)
+{
+
+  console.log('Error!');
+  console.log(err);
+}
+
+
+
+
+
+
+
+ 
