@@ -9,28 +9,19 @@
   };
   firebase.initializeApp(config);
 
-// Reference messages collection
-var ref = firebase.database().ref('username');
-
-
 // Listen for form submit
 document.getElementById('loginPage').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e){
 
-	console.log('insdie function');
   e.preventDefault();
 
   // Get values
-  var username = getInputVal('username');
- var password = getInputVal('password');
-
-console.log(username);
-
- ref.on('value',gotData,errData); 
-  // Clear form
-  document.getElementById('loginPage').reset();
+  var uname = getInputVal('username');
+  var pass = getInputVal('password');
+ 
+  saveMessage();
 }
 
 // Function to get get form values
@@ -38,27 +29,37 @@ function getInputVal(id){
   return document.getElementById(id).value;
 }
 
+// Save message to firebase
+function saveMessage(){
+
+var ref=firebase.database().ref('userDetails');
+
+ref.on('value',gotData,errData); 
+
+} 
+
+
 function gotData(data)
 {
 
-var user=data.val();
-var keys=Object.keys(user);
- var k=keys[0];
- var username=user[k].username;
- var  password=user[k].password;
+var user_data=data.val();
+console.log(user_data);
+var keys=Object.keys(user_data);
+  var k=keys[0];
+ var uname_data=user_data[k].username;
+   var pass_data=user_data[k].password;
+    console.log(uname_data,pass_data);
+    
 
-      if(username=='vssoladmin')
-      {
-        console.log('inside if');
-    console.log(username,password);
-        
-      }
-      else
-      {
-        alert("login denied");
-      }
+}
 
-  }
+
+function errData(err)
+{
+
+  console.log('Error!');
+  console.log(err);
+}
 
 
 function errData(err)
