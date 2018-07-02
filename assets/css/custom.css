@@ -32,7 +32,11 @@ header .navbar {
     background-color: transparent;
 }
 .navbar-brand > img {
-    height: 50px;
+    max-height: 55px;
+    margin-top: 7px;
+}
+sup{
+    color: red;
 }
 .navbar-brand {
     padding: 0px 15px;

@@ -62,15 +62,13 @@ var contact=data.val();
 var keys=Object.keys(contact);
 for(var i=0;i<keys.length;i++)
 {
-  var k=keys[i];
- var name=contact[k].name;
+   var k=keys[i];
+   var name=contact[k].name;
    var email=contact[k].email;
    var phone=contact[k].phone;
    var subject=contact[k].subject;
    var message=contact[k].message;
     console.log(name,email);
-
-
   }
 }
 
