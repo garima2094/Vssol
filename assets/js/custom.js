@@ -43,13 +43,3 @@ $(document).ready(function () {
         });
     }
 });
-$(document).on("click", function(e){
-    if($(e.target).is("#contact")){
-        $("#basic").show();
-        $("#foundation").hide();
-
-    }else if($(e.target).is("#book")){
-        $("#foundation").show();
-        $("#basic").hide();
-    }
-});
