@@ -43,7 +43,7 @@ function gotData(data) {
         window.open("view.html",'_self');
     }
     else{
-        alert("You have entered wrong username, passowrd!!")
+        alert("You have entered wrong Username or Password!!")
     }
 }
 function errData(err) {
