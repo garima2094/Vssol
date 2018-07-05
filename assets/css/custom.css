@@ -41,7 +41,6 @@ sup{
 .navbar-brand {
     padding: 0px 15px;
 }
-.carousel, main .container, main .container-fluid {margin-top: 70px;}
 .info {    margin-top: 0 !important; background-color: #F5F5F5;}
 .carousel-inner > .item > img {
     width:100%;
@@ -285,7 +284,7 @@ h3:hover:before {
 
 @media (max-width : 768px){
     .major{
-        height: 350px;
+        height: auto;
     }
     .table{
         display: block;
@@ -293,7 +292,7 @@ h3:hover:before {
         width: 100%;
 
     }
-    .equal-height ,.major{
+    .equal-height {
         min-height: 750px !important;
         height: 100%;
     }
@@ -304,8 +303,6 @@ h3:hover:before {
         min-height: 700px;
         height: 100%;
     }
-
-    .carousel, main .container, main .container-fluid {margin-top: 140px;}
 }
 @media (max-width : 1440px) and (min-width: 1200px){
     .equal-height{

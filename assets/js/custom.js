@@ -2,7 +2,6 @@ $(document).ready(function () {
         var element = jQuery("body");
         element.find('.header').load("header.html");
         element.find(".footer").load("footer.html");
-
     var slider = element.find(".slider");
     if(slider.length != 0){
         slider.slick({
